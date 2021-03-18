@@ -1,0 +1,18 @@
+import sys
+Sum = 5
+primenumberslist =[2,3]
+itsprime=True
+for i in range (4,200000000000000):
+    itsprime=True
+    for counter in list (primenumberslist):
+        if (i%counter)==0 :
+            itsprime = False
+            break
+                
+    if itsprime == True :
+        primenumberslist.append(i)
+        Sum = Sum + i
+        if i > 2000 :
+            print( "the total some is:", Sum , "~~~~~~~~~~~~~~~~~~~~~")
+            #print (primenumberslist)
+            sys.exit()

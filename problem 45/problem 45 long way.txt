@@ -1,0 +1,21 @@
+for a in range (100 , 100000):
+    h = (a*((2*a)-1))
+    for b in range ( 100 , 100000):
+        p = ((b*((3*b)-1))/2)
+        if p == h:
+            for c in range (100 , 100000):
+                t = (c*((c+1))/2)
+                if p == t:
+                    print (p)
+                if t > p :
+                    break
+        if p > h:
+            break
+        
+
+
+
+
+
+
+print ("finish")
